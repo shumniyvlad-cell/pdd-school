@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow">
+<title>Личный кабинет — ПДД СДАЛ</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/app.css">
+</head>
+<body data-page="reg">
+<header data-top></header>
+
+<section class="reg">
+  <div class="wrap reg-grid">
+    <form class="reg-card" data-reg novalidate>
+      <div class="reg-h"><img data-duck="5773" alt=""><div><h1 class="x3d">Регистрация</h1><p class="muted">Сохраним прогресс, XP и&nbsp;твои ошибки</p></div></div>
+
+      <label class="fld"><span>Имя</span><input name="name" autocomplete="given-name" placeholder="Как к&nbsp;тебе обращаться"></label>
+      <label class="fld"><span>Почта</span><input name="email" type="email" autocomplete="email" placeholder="name@mail.ru" required></label>
+      <label class="fld"><span>Пароль</span><input name="pass" type="password" autocomplete="new-password" placeholder="Не&nbsp;меньше 8 символов" required minlength="8"></label>
+
+      <fieldset class="fld">
+        <span>Где ты сейчас?</span>
+        <div class="seg" data-stage>
+          <label><input type="radio" name="stage" value="start"><b>Только начинаю</b></label>
+          <label><input type="radio" name="stage" value="school"><b>Учусь в&nbsp;автошколе</b></label>
+          <label><input type="radio" name="stage" value="soon"><b>Скоро экзамен</b></label>
+          <label><input type="radio" name="stage" value="passed"><b>Уже сдал</b></label>
+        </div>
+      </fieldset>
+
+      <div class="fld" data-days>
+        <span>Сколько дней до&nbsp;экзамена <em>необязательно</em></span>
+        <div class="days">
+          <input name="days" type="number" min="1" max="365" inputmode="numeric" placeholder="Например, 14">
+          <button type="button" data-d="7">неделя</button><button type="button" data-d="14">2 недели</button><button type="button" data-d="30">месяц</button>
+        </div>
+        <small class="muted">Подстроим план занятий под&nbsp;эту дату</small>
+      </div>
+
+      <label class="agree"><input type="checkbox" name="agree" required><span>Согласен с&nbsp;<a href="#">офертой</a> и&nbsp;<a href="#">обработкой персональных данных</a></span></label>
+      <div class="reg-err" data-err></div>
+      <button class="btn btn-y btn-block" type="submit">Создать аккаунт</button>
+      <p class="reg-alt">Уже есть аккаунт? <a href="account.html">Войти</a></p>
+    </form>
+
+    <aside class="reg-side">
+      <div class="reg-img"><img src="img/granta-side.jpg" alt="Учебная Гранта"></div>
+      <ul class="checks">
+        <li>Первый урок каждого курса бесплатно</li>
+        <li>Тренажёр по&nbsp;всем 40 билетам</li>
+        <li>План до&nbsp;экзамена по&nbsp;дням</li>
+      </ul>
+    </aside>
+  </div>
+</section>
+
+<footer data-foot></footer>
+<script src="js/app.js"></script>
+</body>
+</html>
